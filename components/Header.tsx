@@ -1,6 +1,7 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 type Props = {};
 
@@ -35,10 +36,18 @@ export default function Header({}: Props) {
         transition={{ duration: 1 }}
         className="flex flex-row items-center"
       >
-        <button className="headerBtn">About</button>
-        <button className="headerBtn">Experience</button>
-        <button className="headerBtn">Projects</button>
-        <button className="headerBtn">Skills</button>
+        <Link href="#about">
+          <button className="headerBtn">About</button>
+        </Link>
+        <Link href="#experience">
+          <button className="headerBtn">Experience</button>
+        </Link>
+        <Link href="#projects">
+          <button className="headerBtn">Projects</button>
+        </Link>
+        <Link href="Skills">
+          <button className="headerBtn">Skills</button>
+        </Link>
       </motion.div>
       <motion.div
         initial={{ x: 500, opacity: 0, scale: 0.5 }}

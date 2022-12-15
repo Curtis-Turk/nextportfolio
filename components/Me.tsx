@@ -14,7 +14,7 @@ export default function Me({}: Props) {
   });
 
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center overflow-hidden">
+    <div className="h-screen flex flex-col space-y-8 items-center justify-center overflow-hidden z-20">
       <BackgroundCircles />
       <div className="relative h-32 w-32 rounded-full mx-auto object-cover">
         <Image className="rounded-full " src={myImage} alt="me" fill></Image>
