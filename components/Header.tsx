@@ -1,12 +1,18 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
+import { motion } from "framer-motion";
 
 type Props = {};
 
 export default function Header({}: Props) {
   return (
     <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20">
-      <div className="flex flex-row items-center">
+      <motion.div
+        initial={{ x: -500, opacity: 0, scale: 0.5 }}
+        animate={{ x: 0, opacity: 100, scale: 1 }}
+        transition={{ duration: 1 }}
+        className="flex flex-row items-center"
+      >
         <SocialIcon
           url="https://github.com/Curtis-Turk"
           fgColor="gray"
@@ -22,8 +28,13 @@ export default function Header({}: Props) {
           fgColor="gray"
           bgColor="transparent"
         ></SocialIcon>
-      </div>
-      <div className="flex flex-row items-center">
+      </motion.div>
+      <motion.div
+        initial={{ x: 500, opacity: 0, scale: 0.5 }}
+        animate={{ x: 0, opacity: 100, scale: 1 }}
+        transition={{ duration: 1 }}
+        className="flex flex-row items-center"
+      >
         <SocialIcon
           className="cursor-pointer"
           network="email"
@@ -33,7 +44,7 @@ export default function Header({}: Props) {
         <p className="hidden md:inline-flex text-sm text-gray-400">
           Contact me
         </p>
-      </div>
+      </motion.div>
     </header>
   );
 }

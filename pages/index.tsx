@@ -11,10 +11,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1 className="text-orange-500">Curtis</h1>
-      {/* Header */}
       <Header />
       {/* Hero */}
+      <section id="me"></section>
       {/* About */}
       {/* Experience */}
       {/* Skills */}
