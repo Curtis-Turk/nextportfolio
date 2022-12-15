@@ -30,6 +30,17 @@ export default function Header({}: Props) {
         ></SocialIcon>
       </motion.div>
       <motion.div
+        initial={{ y: -100, opacity: 0, scale: 0.5 }}
+        animate={{ y: 0, opacity: 100, scale: 1 }}
+        transition={{ duration: 1 }}
+        className="flex flex-row items-center"
+      >
+        <button className="headerBtn">About</button>
+        <button className="headerBtn">Experience</button>
+        <button className="headerBtn">Projects</button>
+        <button className="headerBtn">Skills</button>
+      </motion.div>
+      <motion.div
         initial={{ x: 500, opacity: 0, scale: 0.5 }}
         animate={{ x: 0, opacity: 100, scale: 1 }}
         transition={{ duration: 1 }}
