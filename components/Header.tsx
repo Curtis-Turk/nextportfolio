@@ -45,7 +45,7 @@ export default function Header({}: Props) {
         <Link href="#projects">
           <button className="headerBtn">Projects</button>
         </Link>
-        <Link href="Skills">
+        <Link href="#skills">
           <button className="headerBtn">Skills</button>
         </Link>
       </motion.div>
