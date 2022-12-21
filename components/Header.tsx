@@ -36,6 +36,10 @@ export default function Header({}: Props) {
         transition={{ duration: 1 }}
         className="flex flex-row items-center"
       >
+        <Link href={"#me"}>
+          <button className="headerBtn">🍊</button>
+        </Link>
+
         <Link href="#about">
           <button className="headerBtn">About</button>
         </Link>

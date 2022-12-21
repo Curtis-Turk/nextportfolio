@@ -11,6 +11,8 @@ export default function BackgroundCircles() {
       }}
       transition={{
         duration: 2,
+        repeat: Infinity,
+        repeatDelay: 6,
       }}
       className="relative flex justify-center items-center"
     >
