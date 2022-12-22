@@ -46,11 +46,11 @@ export default function Header({}: Props) {
         <Link href="#experience">
           <button className="headerBtn">Experience</button>
         </Link>
-        <Link href="#projects">
-          <button className="headerBtn">Projects</button>
-        </Link>
         <Link href="#skills">
           <button className="headerBtn">Skills</button>
+        </Link>
+        <Link href="#projects">
+          <button className="headerBtn">Projects</button>
         </Link>
       </motion.div>
       <motion.div
