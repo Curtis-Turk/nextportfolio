@@ -8,7 +8,14 @@ type Props = {};
 
 export default function Me({}: Props) {
   const [text, count] = useTypewriter({
-    words: ["I'm Curtis", "Developer", "Builder", "Solver"],
+    words: [
+      "Curtis",
+      "Citrus",
+      "Rustic",
+      "a Developer",
+      "a Builder",
+      "a Solver",
+    ],
     loop: true,
     delaySpeed: 2000,
   });
@@ -23,7 +30,7 @@ export default function Me({}: Props) {
         Software engineer
       </h2>
       <h1 className="text-5xl lg:text-6l p-4">
-        <span>{text}</span>
+        <span>I&apos;m {text}</span>
         <Cursor cursorColor="#F7AB0A" />
       </h1>
     </div>
