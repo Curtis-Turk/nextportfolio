@@ -36,20 +36,20 @@ export default function Header({}: Props) {
         transition={{ duration: 1 }}
         className="flex flex-row items-center"
       >
-        <Link href={"#me"}>
+        <Link href="#me" scroll={false}>
           <button className="headerBtn">🍊</button>
         </Link>
 
-        <Link href="#about">
+        <Link href="#about" scroll={false}>
           <button className="headerBtn">About</button>
         </Link>
-        <Link href="#experience">
+        <Link href="#experience" scroll={false}>
           <button className="headerBtn">Experience</button>
         </Link>
-        <Link href="#skills">
+        <Link href="#skills" scroll={false}>
           <button className="headerBtn">Skills</button>
         </Link>
-        <Link href="#projects">
+        <Link href="#projects" scroll={false}>
           <button className="headerBtn">Projects</button>
         </Link>
       </motion.div>

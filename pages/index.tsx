@@ -3,6 +3,7 @@ import About from "../components/About";
 import Experience from "../components/Experience";
 import Header from "../components/Header";
 import Me from "../components/Me";
+import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 
 export default function Home() {
@@ -30,8 +31,9 @@ export default function Home() {
       <section id="skills" className="snap-start">
         <Skills></Skills>
       </section>
-      {/* Projects */}
-      <section id="projects" className="snap-start"></section>
+      <section id="projects" className="snap-start">
+        <Projects></Projects>
+      </section>
       {/* Contact me */}
     </div>
   );

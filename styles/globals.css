@@ -1,9 +1,19 @@
 @tailwind base;
+html {
+  scroll-behavior: smooth;
+}
+
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
   .headerBtn{
     @apply px-4 py-3 rounded-full text-gray-400 transition-all border-[#242424] hover:border-[#ec3232] hover:text-[#d67540]
+  }
+}
+
+@layer base {
+  html{
+    @apply scroll-smooth;
   }
 }
