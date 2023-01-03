@@ -1,5 +1,6 @@
 import Head from "next/head";
 import About from "../components/About";
+import ContactMe from "../components/ContactMe";
 import Experience from "../components/Experience";
 import Header from "../components/Header";
 import Me from "../components/Me";
@@ -25,16 +26,18 @@ export default function Home() {
       <section id="about" className="snap-center">
         <About></About>
       </section>
-      <section id="experience" className="snap-center">
-        <Experience></Experience>
+      <section id="projects" className="snap-start">
+        <Projects></Projects>
       </section>
       <section id="skills" className="snap-start">
         <Skills></Skills>
       </section>
-      <section id="projects" className="snap-start">
-        <Projects></Projects>
+      <section id="experience" className="snap-center">
+        <Experience></Experience>
       </section>
-      {/* Contact me */}
+      <section id="contactMe" className="snap-center">
+        <ContactMe></ContactMe>
+      </section>
     </div>
   );
 }

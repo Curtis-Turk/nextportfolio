@@ -43,32 +43,34 @@ export default function Header({}: Props) {
         <Link href="#about" scroll={false}>
           <button className="headerBtn">About</button>
         </Link>
-        <Link href="#experience" scroll={false}>
-          <button className="headerBtn">Experience</button>
+        <Link href="#projects" scroll={false}>
+          <button className="headerBtn">Projects</button>
         </Link>
         <Link href="#skills" scroll={false}>
           <button className="headerBtn">Skills</button>
         </Link>
-        <Link href="#projects" scroll={false}>
-          <button className="headerBtn">Projects</button>
+        <Link href="#experience" scroll={false}>
+          <button className="headerBtn">Experience</button>
         </Link>
       </motion.div>
-      <motion.div
-        initial={{ x: 500, opacity: 0, scale: 0.5 }}
-        animate={{ x: 0, opacity: 100, scale: 1 }}
-        transition={{ duration: 1 }}
-        className="flex flex-row items-center"
-      >
-        <SocialIcon
-          className="cursor-pointer"
-          network="email"
-          fgColor="gray"
-          bgColor="transparent"
-        ></SocialIcon>
-        <p className="hidden md:inline-flex text-sm text-gray-400">
-          Contact me
-        </p>
-      </motion.div>
+      <Link href="#contactMe">
+        <motion.div
+          initial={{ x: 500, opacity: 0, scale: 0.5 }}
+          animate={{ x: 0, opacity: 100, scale: 1 }}
+          transition={{ duration: 1 }}
+          className="flex flex-row items-center"
+        >
+          <SocialIcon
+            className="cursor-pointer"
+            network="email"
+            fgColor="gray"
+            bgColor="transparent"
+          ></SocialIcon>
+          <div className="hidden md:inline-flex text-sm text-gray-400">
+            Contact me
+          </div>
+        </motion.div>
+      </Link>
     </header>
   );
 }
