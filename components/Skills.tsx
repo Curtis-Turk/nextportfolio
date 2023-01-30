@@ -16,10 +16,60 @@ export default function Skills({}: Props) {
         Skills
       </h3>
       <div className="grid grid-cols-3 gap-5">
-        <Skill></Skill>
-        <Skill></Skill>
-        <Skill></Skill>
-        <Skill></Skill>
+        <div className="group relative flex cursor-pointer">
+          <motion.img
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.2 }}
+            className="rounded-full object-cover w-24 h-24"
+            src="https://img.icons8.com/fluency/512/javascript.png"
+          ></motion.img>
+        </div>
+        <div className="group relative flex cursor-pointer">
+          <motion.img
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.2 }}
+            className="rounded-full object-cover w-24 h-24"
+            src="https://img.icons8.com/officel/512/react.png"
+          ></motion.img>
+        </div>
+        <div className="group relative flex cursor-pointer">
+          <motion.img
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.2 }}
+            className="rounded-full object-cover w-24 h-24"
+            src="https://img.icons8.com/fluency/512/typescript.png"
+          ></motion.img>
+        </div>
+        <div className="group relative flex cursor-pointer">
+          <motion.img
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.2 }}
+            className="rounded-full object-cover w-24 h-24"
+            src="https://img.icons8.com/fluency/512/node-js.png"
+          ></motion.img>
+        </div>
+        <div className="group relative flex cursor-pointer">
+          <motion.img
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.2 }}
+            className="rounded-full object-cover w-24 h-24"
+            src="https://img.icons8.com/color/512/ruby-programming-language.png"
+          ></motion.img>
+        </div>
+        <div className="group relative flex cursor-pointer">
+          <motion.img
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.2 }}
+            className="rounded-full object-cover w-24 h-24"
+            src=" https://img.icons8.com/color/512/java-coffee-cup-logo.png"
+          ></motion.img>
+        </div>
       </div>
     </motion.div>
   );
