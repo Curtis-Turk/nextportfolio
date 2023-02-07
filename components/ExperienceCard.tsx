@@ -29,9 +29,12 @@ export default function ExperienceCard({
         viewport={{ once: true }}
         className="w-50 h-32 object-cover object-center"
       >
-        <Link href={link}>
+        {/* <Link href={link}> */}
+        <a href={link}>
           <Image src={logo} alt="" fill></Image>
-        </Link>
+        </a>
+
+        {/* </Link> */}
       </motion.div>
       <div className="">
         <h4 className="text-4xl font-light">{jobTitle}</h4>

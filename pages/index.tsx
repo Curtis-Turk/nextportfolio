@@ -16,13 +16,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Header />
-
       <section id="me" className="snap-center">
         <Me />
       </section>
-
       <section id="about" className="snap-center">
         <About></About>
       </section>
