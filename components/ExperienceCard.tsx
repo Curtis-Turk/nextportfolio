@@ -1,14 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 type Props = {
   company: string;
   jobTitle: string;
   dates: string;
   responsibilities: Array<string>;
-  logo: string;
+  logo: StaticImageData;
   link: string;
 };
 
@@ -27,11 +27,11 @@ export default function ExperienceCard({
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 2 }}
         viewport={{ once: true }}
-        className="w-50 h-32 object-cover object-center"
+        className="w-50 h-32 object-contain object-center"
       >
         {/* <Link href={link}> */}
-        <a href={link}>
-          <Image src={logo} alt="" fill></Image>
+        <a href={link} className="h-auto w-full">
+          <Image src={logo} alt="" height={150}></Image>
         </a>
 
         {/* </Link> */}

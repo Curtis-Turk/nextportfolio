@@ -60,12 +60,12 @@ export default function Header({}: Props) {
           transition={{ duration: 1 }}
           className="flex flex-row items-center"
         >
-          <SocialIcon
+          {/* <SocialIcon
             className="cursor-pointer"
             network="email"
             fgColor="gray"
             bgColor="transparent"
-          ></SocialIcon>
+          ></SocialIcon> */}
           <div className="hidden md:inline-flex text-sm text-gray-400">
             Contact me
           </div>
