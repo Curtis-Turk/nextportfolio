@@ -53,24 +53,25 @@ export default function Header({}: Props) {
           <button className="headerBtn">Experience</button>
         </Link>
       </motion.div>
-      <Link href="#contactMe">
-        <motion.div
-          initial={{ x: 500, opacity: 0, scale: 0.5 }}
-          animate={{ x: 0, opacity: 100, scale: 1 }}
-          transition={{ duration: 1 }}
-          className="flex flex-row items-center"
-        >
-          {/* <SocialIcon
-            className="cursor-pointer"
-            network="email"
-            fgColor="gray"
-            bgColor="transparent"
-          ></SocialIcon> */}
+      <motion.div
+        initial={{ x: 500, opacity: 0, scale: 0.5 }}
+        animate={{ x: 0, opacity: 100, scale: 1 }}
+        transition={{ duration: 1 }}
+        className="flex flex-row items-center"
+      >
+        <Link href="#contactMe">
           <div className="hidden md:inline-flex text-sm text-gray-400">
             Contact me
           </div>
-        </motion.div>
-      </Link>
+        </Link>
+        <SocialIcon
+          className="cursor-pointer"
+          url="#contactMe"
+          network="email"
+          fgColor="gray"
+          bgColor="transparent"
+        ></SocialIcon>
+      </motion.div>
     </header>
   );
 }

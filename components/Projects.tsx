@@ -8,12 +8,13 @@ export default function Projects({}: Props) {
   const travelLite = {
     name: "TraveLite",
     description: "A webapp to help you make sustainable travel decisions",
-    url: "https://theartsdevelopmentcompany.org.uk/wp-content/uploads/2019/02/Website-Building-Landscape-1280x640.jpg",
+    url: "https://i.ibb.co/b7PFN4X/Screenshot-2023-02-09-at-16-41-04.png",
   };
-  const makersBnb = {
-    name: "MakersBnb",
-    description: "An AirBnB-inspired group project",
-    url: "https://theartsdevelopmentcompany.org.uk/wp-content/uploads/2019/02/Website-Building-Landscape-1280x640.jpg",
+  const ntsu = {
+    name: "NTSu",
+    description:
+      "A track finder for the NTS episodes. To easily find links to listen or buy from various platforms and create a library of favourites",
+    url: "https://ibb.co/wgt4633",
   };
   const gameOfCards = {
     name: "GameOfCards",
@@ -21,7 +22,7 @@ export default function Projects({}: Props) {
     url: "https://theartsdevelopmentcompany.org.uk/wp-content/uploads/2019/02/Website-Building-Landscape-1280x640.jpg",
   };
 
-  const projects = [travelLite, makersBnb, gameOfCards];
+  const projects = [travelLite, ntsu, gameOfCards];
 
   const projectElements = projects?.map((project) => (
     <div
@@ -35,7 +36,7 @@ export default function Projects({}: Props) {
         viewport={{ once: true }}
         src={project.url}
         alt="site"
-        className="w-2/4"
+        className="h-2/4"
       ></motion.img>
 
       <div className="space-y-10 px-10 md:px-10 max-w-6xl">
